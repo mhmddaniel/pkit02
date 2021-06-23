@@ -1,0 +1,10 @@
+C:\Users\mhmdd\source\repos\PKIT02\PKIT02\bin\Debug\PKIT02.exe.config
+C:\Users\mhmdd\source\repos\PKIT02\PKIT02\bin\Debug\PKIT02.exe
+C:\Users\mhmdd\source\repos\PKIT02\PKIT02\bin\Debug\PKIT02.pdb
+C:\Users\mhmdd\source\repos\PKIT02\PKIT02\obj\Debug\PKIT02.Properties.Resources.resources
+C:\Users\mhmdd\source\repos\PKIT02\PKIT02\obj\Debug\PKIT02.csproj.GenerateResource.cache
+C:\Users\mhmdd\source\repos\PKIT02\PKIT02\obj\Debug\PKIT02.csproj.CoreCompileInputs.cache
+C:\Users\mhmdd\source\repos\PKIT02\PKIT02\obj\Debug\PKIT02.exe
+C:\Users\mhmdd\source\repos\PKIT02\PKIT02\obj\Debug\PKIT02.pdb
+C:\Users\mhmdd\source\repos\PKIT02\PKIT02\obj\Debug\PKIT02.csproj.AssemblyReference.cache
+C:\Users\mhmdd\source\repos\PKIT02\PKIT02\obj\Debug\PKIT02.MainView.resources
