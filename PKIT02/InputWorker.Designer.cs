@@ -29,73 +29,109 @@ namespace PKIT02
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.nameLabel = new System.Windows.Forms.Label();
+            this.levelLabel = new System.Windows.Forms.Label();
+            this.nipLabel = new System.Windows.Forms.Label();
+            this.nameInput = new System.Windows.Forms.TextBox();
+            this.nipInput = new System.Windows.Forms.TextBox();
+            this.levelInput = new System.Windows.Forms.TextBox();
+            this.labelJob = new System.Windows.Forms.Label();
+            this.jobInput = new System.Windows.Forms.TextBox();
+            this.saveButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // nameLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(196, 73);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nama";
+            this.nameLabel.AutoSize = true;
+            this.nameLabel.Location = new System.Drawing.Point(170, 73);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(35, 13);
+            this.nameLabel.TabIndex = 0;
+            this.nameLabel.Text = "Nama";
             // 
-            // label2
+            // levelLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(196, 123);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Nama";
+            this.levelLabel.AutoSize = true;
+            this.levelLabel.Location = new System.Drawing.Point(170, 126);
+            this.levelLabel.Name = "levelLabel";
+            this.levelLabel.Size = new System.Drawing.Size(53, 13);
+            this.levelLabel.TabIndex = 1;
+            this.levelLabel.Text = "Golongan";
+            this.levelLabel.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label3
+            // nipLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(196, 98);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Nama";
+            this.nipLabel.AutoSize = true;
+            this.nipLabel.Location = new System.Drawing.Point(170, 99);
+            this.nipLabel.Name = "nipLabel";
+            this.nipLabel.Size = new System.Drawing.Size(25, 13);
+            this.nipLabel.TabIndex = 2;
+            this.nipLabel.Text = "NIP";
             // 
-            // textBox1
+            // nameInput
             // 
-            this.textBox1.Location = new System.Drawing.Point(237, 70);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(226, 20);
-            this.textBox1.TabIndex = 3;
+            this.nameInput.Location = new System.Drawing.Point(237, 70);
+            this.nameInput.Name = "nameInput";
+            this.nameInput.Size = new System.Drawing.Size(226, 20);
+            this.nameInput.TabIndex = 3;
+            this.nameInput.TextChanged += new System.EventHandler(this.nameInput_TextChanged);
             // 
-            // textBox2
+            // nipInput
             // 
-            this.textBox2.Location = new System.Drawing.Point(237, 96);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(226, 20);
-            this.textBox2.TabIndex = 4;
+            this.nipInput.Location = new System.Drawing.Point(237, 96);
+            this.nipInput.Name = "nipInput";
+            this.nipInput.Size = new System.Drawing.Size(226, 20);
+            this.nipInput.TabIndex = 4;
             // 
-            // textBox3
+            // levelInput
             // 
-            this.textBox3.Location = new System.Drawing.Point(237, 123);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(226, 20);
-            this.textBox3.TabIndex = 5;
+            this.levelInput.Location = new System.Drawing.Point(237, 123);
+            this.levelInput.Name = "levelInput";
+            this.levelInput.Size = new System.Drawing.Size(226, 20);
+            this.levelInput.TabIndex = 5;
+            // 
+            // labelJob
+            // 
+            this.labelJob.AutoSize = true;
+            this.labelJob.Location = new System.Drawing.Point(170, 153);
+            this.labelJob.Name = "labelJob";
+            this.labelJob.Size = new System.Drawing.Size(45, 13);
+            this.labelJob.TabIndex = 6;
+            this.labelJob.Text = "Jabatan";
+            this.labelJob.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // jobInput
+            // 
+            this.jobInput.Location = new System.Drawing.Point(237, 150);
+            this.jobInput.Name = "jobInput";
+            this.jobInput.Size = new System.Drawing.Size(226, 20);
+            this.jobInput.TabIndex = 7;
+            this.jobInput.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            // 
+            // saveButton
+            // 
+            this.saveButton.Location = new System.Drawing.Point(315, 221);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(75, 23);
+            this.saveButton.TabIndex = 8;
+            this.saveButton.Text = "Simpan";
+            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // InputWorker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.saveButton);
+            this.Controls.Add(this.jobInput);
+            this.Controls.Add(this.labelJob);
+            this.Controls.Add(this.levelInput);
+            this.Controls.Add(this.nipInput);
+            this.Controls.Add(this.nameInput);
+            this.Controls.Add(this.nipLabel);
+            this.Controls.Add(this.levelLabel);
+            this.Controls.Add(this.nameLabel);
             this.Name = "InputWorker";
             this.Text = "Tambah Data Pegawai";
             this.ResumeLayout(false);
@@ -105,11 +141,14 @@ namespace PKIT02
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label nameLabel;
+        private System.Windows.Forms.Label levelLabel;
+        private System.Windows.Forms.Label nipLabel;
+        private System.Windows.Forms.TextBox nameInput;
+        private System.Windows.Forms.TextBox nipInput;
+        private System.Windows.Forms.TextBox levelInput;
+        private System.Windows.Forms.Label labelJob;
+        private System.Windows.Forms.TextBox jobInput;
+        private System.Windows.Forms.Button saveButton;
     }
 }
